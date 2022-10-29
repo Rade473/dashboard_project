@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
   rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>Document</title>
   
 </head>
@@ -14,18 +19,19 @@
   <div class="container">
     <div class="dashboard">
       <div class="logo">
-        <!-- Logo here -->
+        
+        <span class="material-symbols-outlined">
+          grid_view
+          </span>
+          <div>Dashboard</div>
       </div>
-      <div class="top menu">
+      <div class="menu">
         <div><span class="material-icons">home</span>Home</div>
         <div><span class="material-icons">person_outline</span>Profile</div>
         <div><span class="material-icons">message</span>Messages</div>
         <div><span class="material-icons">history</span>History</div>
         <div><span class="material-icons">assignment</span>Tasks</div>
         <div><span class="material-icons">people</span>Community</div>
-
-      </div>
-      <div class="bottom menu">
         <div><span class="material-icons">settings</span>Settings</div>
         <div><span class="material-icons">live_help</span>Help</div>
         <div><span class="material-icons">privacy_tip</span>Privacy</div>
@@ -33,18 +39,15 @@
     </div>
 
     <div class="navigation">
-      <!-- Searchbar -->
       <div class="searchbar">
         <form action="#">
-          <label for="searchbar"><span class="material-icons">search</span> </label>
-          <input type="search" id="searchbar" name="search" placeholder="Search...">
+          <label for="searchbar"><span class="material-icons">search</span></label>
+          <input type="search" id="searchbar" name="search">
         </form>
         <div class="notifications">
-          <span class="material-icons">
-            notifications_active
-            </span>
-            <img src="./styles/icons8-male-user-48.png" alt="user icon" >
-            <div>Rade Šekularac</div>
+            <div><span class="material-icons">
+              notifications_active
+              </span><img src="./styles/icons8-male-user-48.png" alt="user icon" >Rade Šekularac</div>
         </div>
       </div>
       <div class="manageaccount">
@@ -55,22 +58,92 @@
             <h3>Rade Šekularac (@Rade473)</h3>
           </div>
         </div>
+        <div class="buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
       </div>
       
     </div>
     <div class="main">
-      <label for="projects"> Your projects </label>
-      <div class="projects" id="projects">
-        <div class="project"><h4>SuperCool project</h4><p>You disposal strongly quitting his endeavor two settling him. Manners ham him hearted hundred expense. Get open game him what hour more part. Adapted as smiling of females oh me journey exposed concern. Met come add cold calm rose mile what. Tiled manor court at built by place fanny. Discretion at be an so decisively especially. Exeter itself object matter if on mr in.</p></div>
-        <div class="project"><h4>Less cool project</h4>Am increasing at contrasted in favourable he considered astonished. As if made held in an shot. By it enough to valley desire do. Mrs chief great maids these which are ham match she. Abode to tried do thing maids. Doubtful disposed returned rejoiced to dashwood is so up.</div>
-        <div class="project"><h4>Impossible App</h4>Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards. Enjoyment use tolerably dependent listening men. No peculiar in handsome together unlocked do by. Article concern joy anxious did picture sir her. Although desirous not recurred disposed off shy you numerous securing.</div>
-        <div class="project"><h4>Easy Peasy App</h4>In by an appetite no humoured returned informed. Possession so comparison inquietude he he conviction no decisively. Marianne jointure attended she hastened surprise but she. Ever lady son yet you very paid form away. He advantage of exquisite resolving if on tolerably. Become sister on in garden it barton waited on.</div>
-        <div class="project"><h4>Ad Blocker</h4>Picture removal detract earnest is by. Esteems met joy attempt way clothes yet demesne tedious. Replying an marianne do it an entrance advanced. Two dare say play when hold. Required bringing me material stanhill jointure is as he. Mutual indeed yet her living result matter him bed whence.</div>
-        <div class="project"><h4>Money Maker</h4>Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably my inhabiting so reasonably be if. Too any appearance announcing impossible one. Out mrs means heart ham tears shall power every.</div>
+      <div class="label">Your projects</div> 
+      <div class="projects">
+        <div class="project"><h4>SuperCool project</h4><p>You disposal strongly quitting his endeavor two settling him. Manners ham him hearted hundred expense. Get open game him what hour more part. Adapted as smiling of females oh me journey exposed concern. Met come add cold calm rose mile what. Tiled manor court at built by place fanny. Discretion at be an so decisively especially. Exeter itself object matter if on mr in.</p> 
+          <div class="cardicons"><span class="material-icons">
+          favorite
+          </span>
+          <span class="material-icons">
+            visibility
+            </span>
+            <span class="material-icons">
+              share
+              </span>
+          </div></div>
+        <div class="project"><h4>Less cool project</h4><p>Am increasing at contrasted in favourable he considered astonished. As if made held in an shot. By it enough to valley desire do. Mrs chief great maids these which are ham match she. Abode to tried do thing maids. Doubtful disposed returned rejoiced to dashwood is so up.</p><div class="cardicons"><span class="material-icons">
+          favorite
+          </span>
+          <span class="material-icons">
+            visibility
+            </span>
+            <span class="material-icons">
+              share
+              </span>
+          </div></div>
+        <div class="project"><h4>Impossible App</h4><p>Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards. Enjoyment use tolerably dependent listening men. No peculiar in handsome together unlocked do by. Article concern joy anxious did picture sir her. Although desirous not recurred disposed off shy you numerous securing.</p><div class="cardicons"><span class="material-icons">
+          favorite
+          </span>
+          <span class="material-icons">
+            visibility
+            </span>
+            <span class="material-icons">
+              share
+              </span>
+          </div></div>
+        <div class="project"><h4>Easy Peasy App</h4><p>In by an appetite no humoured returned informed. Possession so comparison inquietude he he conviction no decisively. Marianne jointure attended she hastened surprise but she. Ever lady son yet you very paid form away. He advantage of exquisite resolving if on tolerably. Become sister on in garden it barton waited on.</p><div class="cardicons"><span class="material-icons">
+          favorite
+          </span>
+          <span class="material-icons">
+            visibility
+            </span>
+            <span class="material-icons">
+              share
+              </span>
+          </div></div>
+        <div class="project"><h4>Ad Blocker</h4><p>Picture removal detract earnest is by. Esteems met joy attempt way clothes yet demesne tedious. Replying an marianne do it an entrance advanced. Two dare say play when hold. Required bringing me material stanhill jointure is as he. Mutual indeed yet her living result matter him bed whence.</p><div class="cardicons"><span class="material-icons">
+          favorite
+          </span>
+          <span class="material-icons">
+            visibility
+            </span>
+            <span class="material-icons">
+              share
+              </span>
+          </div></div>
+        <div class="project"><h4>Money Maker</h4><p>Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably my inhabiting so reasonably be if. Too any appearance announcing impossible one. Out mrs means heart ham tears shall power every.</p><div class="cardicons"><span class="material-icons">
+          favorite
+          </span>
+          <span class="material-icons">
+            visibility
+            </span>
+            <span class="material-icons">
+              share
+              </span>
+          </div></div>
       </div>
 
-      <div class="announcements"></div>
-      <div class="trending"></div>
+      <div class="announcements">
+        <div class="label">Announcements</div>
+        <div class="announcement"><h4>Site Maintenence</h4><p>Offered say visited elderly and. Waited period are played family man formed. He ye body or made on pain part meet.</p></div>
+        <div class="announcement"><h4>Community Share Day</h4>Those an equal point no years do. Depend warmth fat but her but played. Shy and subjects wondered trifling pleasant.</div>
+        <div class="announcement"><h4>Updated Privacy Policy</h4>Wise busy past both park when an ye no. Nay likely her length sooner thrown sex lively income.</div>
+      </div>
+      <div class="trending">
+        <div class="label">Trending</div>
+        <div class="trends"><img src="./styles/icons8-bee-64.png" alt="bee icon" ><h5>@beelle</h5><p>World piece builder</p></div>
+        <div class="trends"><img src="./styles/icons8-penguin-64.png" alt="penguin icon"><h5>@benguin</h5><p>Super "cool"</p></div>
+        <div class="trends"><img src="./styles/icons8-owl-64.png" alt="owl icon"><h5>@owlie</h5><p>She's a hoot</p></div>
+      </div>
     </div>
   </div>
 </body>
